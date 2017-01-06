@@ -1,0 +1,11 @@
+<form>
+    <ul id="coverImages">
+    <% for(var i=0; i < album.image.length; i++) { %>
+        <%console.log(album.image[i])%>
+        <li data-url="<%= album.image[i]['#text'] %>"><%= album.image[i].size %></li>
+    <% } %>
+    </ul>
+
+    <button id="btnSaveAlbumInfo" type="button" class="btn btn-sm btn-success">Save Images</button>
+</form>
+
